@@ -1,12 +1,12 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var less = require('gulp-less');
 
-gulp.task('sass', function(){
-    gulp.src('./**/*.scss')
-        .pipe(sass().on('error', sass.logError))
+gulp.task('less', function(){
+    gulp.src('less/*.less')
+        .pipe(less())
         .pipe(gulp.dest('./css'));
 });
 
-gulp.task('sass:watch', function(){
-    gulp.watch('./**/*.scss', ['sass']);
+gulp.task('less:watch', function(){
+    gulp.watch('less/*.less', ['less']);
 });

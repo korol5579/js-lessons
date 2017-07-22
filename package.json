@@ -18,6 +18,7 @@
   "homepage": "https://github.com/korol5579/js-lessons#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-less": "^3.3.2",
     "gulp-sass": "^3.1.0"
   }
 }
